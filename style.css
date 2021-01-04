@@ -25,7 +25,7 @@ body #upper-section #headings h1 {
 
 body #upper-section #headings .sub-heading {
   color: #937b92;
-  padding: 0 1em;
+  margin: 0 1em;
 }
 
 body #upper-section #ratings {
@@ -113,5 +113,98 @@ body .attribution {
 body .attribution a {
   color: #502050;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  body #upper-section #headings {
+    padding: 4em 8em;
+  }
+  body #upper-section #ratings {
+    padding: 4em;
+  }
+  body #lower-section {
+    padding: 4em;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-size: 34% 50%;
+    background-position: top left bottom right;
+  }
+  body #upper-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em 8em;
+    padding-bottom: 2em;
+  }
+  body #upper-section #headings {
+    text-align: left;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+  }
+  body #upper-section #headings h1 {
+    font-size: 3em;
+    padding: 0;
+    margin: 0.5em 0;
+  }
+  body #upper-section #headings .sub-heading {
+    margin: 0;
+    padding: 0;
+  }
+  body #upper-section #ratings {
+    width: 50%;
+  }
+  body #upper-section #ratings .rating-container {
+    padding: 1em;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body #upper-section #ratings .rating-container .five-stars {
+    margin: 0;
+    text-align: center;
+  }
+  body #upper-section #ratings #rating-2 {
+    margin-left: 10%;
+  }
+  body #upper-section #ratings #rating-3 {
+    margin-left: 20%;
+  }
+  body #lower-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8em;
+  }
+  body #lower-section .buyer-container {
+    width: 32%;
+    padding: 2.5em;
+  }
+  body #lower-section #buyer-2 {
+    margin-top: 5%;
+  }
+  body #lower-section #buyer-3 {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  body #upper-section {
+    padding: 5em 5em 0 5em;
+  }
+  body #upper-section #ratings {
+    width: 60%;
+  }
+  body #lower-section {
+    padding: 0 5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

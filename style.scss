@@ -28,7 +28,7 @@ body {
 			}
 			.sub-heading {
 				color: $dark-grayesh-magenta;
-				padding: 0 1em;
+				margin: 0 1em;
 			}
 		}
 		#ratings {
@@ -104,6 +104,100 @@ body {
 		a {
 			color: $very-dark-magenta;
 			text-decoration: none;
+		}
+	}
+	@media screen and (max-width: 768px) and (min-width: 426px) {
+		#upper-section {
+			#headings {
+				padding: 4em 8em;
+			}
+			#ratings {
+				padding: 4em;
+			}
+		}
+		#lower-section {
+			padding: 4em;
+		}
+	}
+}
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		background-size: 34% 50%;
+		background-position: top left bottom right;
+		#upper-section {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 5em 8em;
+			padding-bottom: 2em;
+			#headings {
+				text-align: left;
+				width: 40%;
+				padding: 0;
+				margin: 0;
+				h1 {
+					font-size: 3em;
+					padding: 0;
+					margin: 0.5em 0;
+				}
+				.sub-heading {
+					margin: 0;
+					padding: 0;
+				}
+			}
+			#ratings {
+				width: 50%;
+				.rating-container {
+					padding: 1em;
+					width: 80%;
+					flex-direction: row;
+					justify-content: space-around;
+					align-items: center;
+					.five-stars {
+						margin: 0;
+						text-align: center;
+					}
+				}
+				#rating-2 {
+					margin-left: 10%;
+				}
+				#rating-3 {
+					margin-left: 20%;
+				}
+			}
+		}
+		#lower-section {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 8em;
+			.buyer-container {
+				width: 32%;
+				padding: 2.5em;
+			}
+			#buyer-2 {
+				margin-top: 5%;
+			}
+			#buyer-3 {
+				margin-top: 10%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	body {
+		#upper-section {
+			padding: 5em 5em 0 5em;
+			#ratings {
+				width: 60%;
+			}
+		}
+		#lower-section {
+			padding: 0 5em;
 		}
 	}
 }
