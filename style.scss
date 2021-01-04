@@ -1,0 +1,109 @@
+// primary
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+// Neutral
+$dark-grayesh-magenta: hsl(303, 10%, 53%);
+$light-grayesh-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 15px;
+	font-family: "Spartan", sans-serif;
+	background: url(./images/bg-pattern-top-mobile.svg) no-repeat top left,
+		url(./images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+	background-size: 100%;
+	width: 100%;
+	#upper-section {
+		#headings {
+			text-align: center;
+			padding: 4em 0;
+			h1 {
+				color: $very-dark-magenta;
+				font-size: 2em;
+				padding: 0.6em 2em;
+			}
+			.sub-heading {
+				color: $dark-grayesh-magenta;
+				padding: 0 1em;
+			}
+		}
+		#ratings {
+			padding: 0 1em;
+			text-align: center;
+			.rating-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				margin: 0 1em;
+				margin-bottom: 1em;
+				color: $very-dark-magenta;
+				font-weight: bold;
+				padding: 1em 0;
+				background: $light-grayesh-magenta;
+				border-radius: 0.4em;
+				.five-stars {
+					margin-bottom: 1em;
+					width: 120px;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+			}
+		}
+	}
+	#lower-section {
+		padding: 2em;
+		.buyer-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background: $very-dark-magenta;
+			color: white;
+			margin-bottom: 1em;
+			padding: 2em;
+			border-radius: 0.6em;
+			.profile-container {
+				display: flex;
+				align-items: center;
+				margin-bottom: 2em;
+				.profile-img {
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+				}
+				.headings-container {
+					margin-left: 1em;
+					h3 {
+						color: $light-grayesh-magenta;
+						font-size: 1em;
+					}
+					.sub-heading {
+						color: $soft-pink;
+						opacity: 0.8;
+					}
+				}
+			}
+			.comment {
+				font-size: 1em;
+			}
+		}
+	}
+	.attribution {
+		background: $soft-pink;
+		color: white;
+		padding: 0.5em;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a {
+			color: $very-dark-magenta;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  background: url(./images/bg-pattern-top-mobile.svg) no-repeat top left, url(./images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+  background-size: 100%;
+  width: 100%;
+}
+
+body #upper-section #headings {
+  text-align: center;
+  padding: 4em 0;
+}
+
+body #upper-section #headings h1 {
+  color: #502050;
+  font-size: 2em;
+  padding: 0.6em 2em;
+}
+
+body #upper-section #headings .sub-heading {
+  color: #937b92;
+  padding: 0 1em;
+}
+
+body #upper-section #ratings {
+  padding: 0 1em;
+  text-align: center;
+}
+
+body #upper-section #ratings .rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1em;
+  margin-bottom: 1em;
+  color: #502050;
+  font-weight: bold;
+  padding: 1em 0;
+  background: #f7f2f7;
+  border-radius: 0.4em;
+}
+
+body #upper-section #ratings .rating-container .five-stars {
+  margin-bottom: 1em;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body #lower-section {
+  padding: 2em;
+}
+
+body #lower-section .buyer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #502050;
+  color: white;
+  margin-bottom: 1em;
+  padding: 2em;
+  border-radius: 0.6em;
+}
+
+body #lower-section .buyer-container .profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+body #lower-section .buyer-container .profile-container .profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+body #lower-section .buyer-container .profile-container .headings-container {
+  margin-left: 1em;
+}
+
+body #lower-section .buyer-container .profile-container .headings-container h3 {
+  color: #f7f2f7;
+  font-size: 1em;
+}
+
+body #lower-section .buyer-container .profile-container .headings-container .sub-heading {
+  color: #ee68a4;
+  opacity: 0.8;
+}
+
+body #lower-section .buyer-container .comment {
+  font-size: 1em;
+}
+
+body .attribution {
+  background: #ee68a4;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .attribution a {
+  color: #502050;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
